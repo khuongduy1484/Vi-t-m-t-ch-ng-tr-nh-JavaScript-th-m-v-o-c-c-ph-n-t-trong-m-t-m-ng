@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text"name="Sample"id="nhapgiatri">
+<input type="button"value="ADD"id="themgiatri"onclick="add_array();">
+<input type="button"value="Display"id="display"onclick="display_array();">
+<script>
+let x= 0;
+let array=Array();
+function add_array() {
+    array[x]=document.getElementById('nhapgiatri').value;
+    alert('Element: '+ array[x] + " index " + x);
+    x++;
+}
+
+function display_array() {
+    let e = "";
+    for (let i=0;i < array.length;i++){
+        e +="Element "+ i + " "+ array[i] + "<br/>";
+    }
+    document.write(e);
+}
+
+
+
+
+</script>
+</body>
+</html>
